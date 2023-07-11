@@ -5,9 +5,7 @@ function Winner({ winner, handleReset }) {
     <div className="winner">
       <div className="wintext">
         {" "}
-        {winner === "X" || winner === "0"
-          ? ` player ${winner} won the game`
-          : winner}
+        {winner === "X" || winner === "0" ? ` player ${winner} won ` : winner}
       </div>
       <button className="playbtn" onClick={handleReset}>
         Play Again
